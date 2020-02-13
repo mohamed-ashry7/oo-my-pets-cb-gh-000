@@ -23,7 +23,7 @@ class Cat
   end
   def self.find_or_create_a_cat(name , owner )
     self.print_all
-    puts "mid"
+    puts "middddddddddddddddddddd"
     cat = @@all.find {|c| c.name == name  }
     cat.owner = owner if cat
     cat ||=self.new(name,owner)
