@@ -35,7 +35,6 @@ class Owner
       dog.mood = "happy" if dog.owner == self
     end
   end
-
     def feed_cats
       Cat.all.each do |dog|
         dog.mood = "happy" if dog.owner == self
