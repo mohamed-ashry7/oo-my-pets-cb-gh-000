@@ -6,7 +6,7 @@ class Dog
     @name = name
     @owner = owner
     @mood = "nervous"
-    @owner.add_pet (self)
+    @owner.add_dog(self)
     @@all << self
   end
 
