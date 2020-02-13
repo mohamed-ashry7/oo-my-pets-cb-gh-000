@@ -30,7 +30,7 @@ class Owner
   end
 
 
-  def wal_dogs
+  def walk_dogs
     Dog.all.each do |dog|
       dog.mood = "happy" if dog.owner == self
     end
