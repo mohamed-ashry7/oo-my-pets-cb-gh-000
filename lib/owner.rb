@@ -6,6 +6,7 @@ class Owner
     @name = name
     @species = "human"
     @cats = []
+    @dogs = [] 
     @@all << self
   end
 
