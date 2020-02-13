@@ -18,7 +18,7 @@ class Cat
   end
 
 
-  def find_or_create_a_cat(name)
+  def find_or_create_a_cat(name, owner )
     cat = @@all.find {|c| c.name == name  }
     cat ||=self.new(name)
 end
