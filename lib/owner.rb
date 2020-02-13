@@ -25,10 +25,11 @@ class Owner
   end
 
   def add_cat(cat)
-    @cat << cat
+    @cats << cat
   end
   def add_dog (dog )
-    @dogs << dog 
+    @dogs << dog
+  end 
   def cats
 
 end
