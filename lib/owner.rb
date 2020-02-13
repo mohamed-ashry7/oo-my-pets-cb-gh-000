@@ -21,6 +21,8 @@ class Owner
     @@all.clear
   end
 
+  def cats 
+
   def add_cat(cat)
     @cats << cat
   end
