@@ -21,8 +21,9 @@ class Owner
     @@all.clear
   end
 
-  def cats 
+  def cats
     Cat.select {|cat| cat.owner == self }
+  end
 
   def add_cat(cat)
     @cats << cat
