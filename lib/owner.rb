@@ -22,6 +22,7 @@ class Owner
   end
 
   def cats 
+    Cat.select {|cat| cat.owner == self }
 
   def add_cat(cat)
     @cats << cat
