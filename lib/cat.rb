@@ -28,5 +28,6 @@ class Cat
     cat.owner = owner if cat
     cat ||=self.new(name,owner)
     self.print_all(owner)
+    puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
   end
 end
