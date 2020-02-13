@@ -24,5 +24,6 @@ class Cat
     puts cat 
     cat.owner = owner if cat
     cat ||=self.new(name,owner)
+    puts cat 
   end
 end
