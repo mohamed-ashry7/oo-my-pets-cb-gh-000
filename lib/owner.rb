@@ -25,6 +25,10 @@ class Owner
     Cat.select {|cat| cat.owner == self }
   end
 
+  def dogs 
+    Dog.select {|dog| dog.owner == self }
+  end 
+
   def add_cat(cat)
     @cats << cat
   end
