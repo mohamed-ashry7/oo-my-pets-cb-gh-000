@@ -19,7 +19,7 @@ class Cat
   end
 
   def self.print_all(owner)
-    @@all.each {|c| puts c.name+ " " + c.owner.name}
+    @@all.each {|c| puts c.name if c.owner == owner }
   end
   def self.find_or_create_a_cat(name , owner )
     self.print_all
