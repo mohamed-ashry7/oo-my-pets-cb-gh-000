@@ -41,14 +41,14 @@ class Owner
       end
   end
 
-  def sell_pets 
+  def sell_pets
     Dog.all.each do |dog|
-      if dog.owner == self 
+      if dog.owner == self
         dog.mood = "nervous"
-        dog.owner = nil 
-      end 
-    end 
-    
+        dog.owner = nil
+      end
+    end
+
 
   def buy_cat(cat_name)
     cat = Cat.find_or_create_a_cat(cat_name,self )
