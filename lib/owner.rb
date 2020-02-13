@@ -38,8 +38,7 @@ class Owner
   end
 
   def buy_dog (dog_name)
-    dog = Dog.find_or_create_a_dog(dog_name)
-    dog.owner = self
+    dog = Dog.find_or_create_a_dog(dog_name,self)
   end
 
 
