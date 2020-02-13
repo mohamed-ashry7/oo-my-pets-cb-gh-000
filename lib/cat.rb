@@ -18,7 +18,7 @@ class Cat
     @@all.size
   end
 
-  def self.print_all
+  def self.print_all(owner)
     @@all.each {|c| puts c.name+ " " + c.owner.name}
   end
   def self.find_or_create_a_cat(name , owner )
