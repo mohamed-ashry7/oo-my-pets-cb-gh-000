@@ -59,6 +59,7 @@ class Owner
 
   def list_pets
     "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+  end
   def buy_cat(cat_name)
     cat = Cat.find_or_create_a_cat(cat_name,self )
   end
