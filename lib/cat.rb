@@ -22,6 +22,8 @@ class Cat
     @@all.each {|c| puts c.name}
   end
   def self.find_or_create_a_cat(name , owner )
+    self.print_all
+    puts "mid"
     cat = @@all.find {|c| c.name == name  }
     cat.owner = owner if cat
     cat ||=self.new(name,owner)
