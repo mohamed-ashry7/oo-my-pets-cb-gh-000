@@ -49,7 +49,7 @@ class Owner
       end
     end
 
-    Cat.all.each do |catcat|
+    Cat.all.each do |cat|
       if cat.owner == self
         cat.mood = "nervous"
         cat.owner = nil
