@@ -34,7 +34,6 @@ class Owner
 
   def buy_cat(cat_name)
     cat = Cat.find_or_create_a_cat(cat_name)
-    cat.owner= self
   end
 
   def buy_dog (dog_name)
