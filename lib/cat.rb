@@ -24,5 +24,6 @@ class Cat
     pry.binding 
     cat.owner = owner if cat
     cat ||=self.new(name,owner)
+    pry.binding 
   end
 end
