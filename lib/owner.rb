@@ -49,6 +49,13 @@ class Owner
       end
     end
 
+    Cat.all.each do |catcat|
+      if cat.owner == self
+        cat.mood = "nervous"
+        cat.owner = nil
+      end
+    end
+  end
 
   def buy_cat(cat_name)
     cat = Cat.find_or_create_a_cat(cat_name,self )
