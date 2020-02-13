@@ -18,16 +18,16 @@ class Cat
     @@all.size
   end
 
-  def self.print_all(owner)
-    @@all.each {|c| puts c.name if c.owner == owner }
-  end
+  # def self.print_all(owner)
+  #   @@all.each {|c| puts c.name if c.owner == owner }
+  # end
   def self.find_or_create_a_cat(name , owner )
-    self.print_all(owner )
-    puts "middddddddddddddddddddd"
-    cat = @@all.find {|c| c.name == name  }
-    cat.owner = owner if cat
-    cat ||=self.new(name,owner)
-    self.print_all(owner)
-    puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+    # self.print_all(owner )
+    # puts "middddddddddddddddddddd"
+    # cat = @@all.find {|c| c.name == name  }
+    # cat.owner = owner if cat
+    self.new(name,owner)
+    # self.print_all(owner)
+    # puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
   end
 end
