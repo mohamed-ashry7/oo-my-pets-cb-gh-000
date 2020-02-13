@@ -22,4 +22,6 @@ class Cat
     cat = @@all.find {|c| c.name == name  }
     cat.owner = owner if cat 
     cat ||=self.new(name,owner )
+
+  end
 end
