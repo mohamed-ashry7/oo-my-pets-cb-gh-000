@@ -22,8 +22,6 @@ class Owner
   end
 
   def cats
-    Cat.all.each {|c| print "#{c.name} "  if c.owner == self }
-    puts " "
     Cat.all.select {|cat| cat.owner == self }
   end
 
