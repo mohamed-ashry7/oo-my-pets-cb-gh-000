@@ -16,4 +16,10 @@ class Cat
   def self.count
     @@all.size
   end
+
+
+  def find_or_create_a_cat(name)
+    cat = @@all.find do
+
+    end
 end
