@@ -21,7 +21,7 @@ class Cat
 
   def self.find_or_create_a_cat(name , owner )
     cat = @@all.find {|c| c.name == name  }
-    pry.binding 
+    pry.binding
     cat.owner = owner if cat
     cat ||=self.new(name,owner)
     pry.binding 
