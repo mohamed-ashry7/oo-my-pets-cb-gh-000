@@ -35,11 +35,11 @@ class Owner
       dog.mood = "happy" if dog.owner == self
     end
   end
-    def feed_cats
+  def feed_cats
       Cat.all.each do |dog|
         dog.mood = "happy" if dog.owner == self
       end
-    end
+  end
   def buy_cat(cat_name)
     cat = Cat.find_or_create_a_cat(cat_name,self )
   end
