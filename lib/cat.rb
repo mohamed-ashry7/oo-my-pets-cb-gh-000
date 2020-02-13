@@ -18,7 +18,8 @@ class Cat
     @@all.size
   end
 
-
+  def self.print_all
+    @@all.each {|c| puts c.name}
   def self.find_or_create_a_cat(name , owner )
     cat = @@all.find {|c| c.name == name  }
     cat.owner = owner if cat
