@@ -32,6 +32,7 @@ class Owner
     @dogs << dog
   end
 
-  def cats
+  
+    
 
 end
