@@ -29,13 +29,7 @@ class Owner
     Dog.select {|dog| dog.owner == self }
   end 
 
-  def add_cat(cat)
-    @cats << cat
-  end
 
-  def add_dog (dog )
-    @dogs << dog
-  end
 
   def buy_cat(cat_name)
     cat = Cat.find_or_create_a_cat(cat_name,self )
