@@ -17,8 +17,8 @@ class Dog
   end
 
   def self.find_or_create_a_dog(name , owner  )
-    dog = @@all.find {|c| c.name == name  }
-    dog.owner = owner if dog
-    dog ||=self.new(name , dog )
+    # dog = @@all.find {|c| c.name == name  }
+    # dog.owner = owner if dog
+    self.new(name , dog )
   end
 end
