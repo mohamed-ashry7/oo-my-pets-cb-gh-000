@@ -24,8 +24,8 @@ class Owner
   end
 
   def add_cat(cat)
-    
-  end 
+
+  end
 
   def cats
 
